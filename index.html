@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./script.js">
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="my_style.css">
+
+
+
+</head>
+
+<body class="capitano">
+    
+        <!-- <h1>Rapid Turtle</h1> -->
+        <title>Rapid Turtle</title>
+
+
+        <header class="masthead">
+
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-12 ">
+
+                        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-default navbar-fixed-top   ">
+                            <a class="navbar-brand" href="index.html"> <img
+                                    class="img-fluid w-100 animated fadeInLeft  " src="./img/rapid_log_piccolo.png"
+                                    alt=""> </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link text-danger  " data-toggle="modal" data-target="#accedi"
+                                            href="#">Accedi<span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-danger " data-toggle="modal" data-target="#crea"
+                                            href="#">Registrati</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" class="btn btn-custom ml-3"><i
+                                                class="fas fa-plus fa-1x mr-2 "></i>Inserisci
+                                            Annuncio</button>
+                                        <a href="gestionale.html"><button type="button" class="btn btn-custom ml-3"><i
+                                                    class="fas fa-users-cog fa-1x mr-3"></i>Admin</button></a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+
+                        <div class="container text-center mt-5  pt-5 mt-5">
+                            <div class="row mt-5">
+                                <div class="col d-none d-lg-block col-lg-12">
+                                    <!-- <h1 class="my-title">Rapid Turtle</h1> -->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img class="img-fluid" src="./img/lessonok.png" alt="">
+                                                <h2>Il modo più veloce di vendere e comprare </h2>
+                                                <h3>- In maniera sicura -</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col d-lg-none ">
+                                    <img class="img-fluid " src="./img/lessonok.png" alt="">
+                                    <h3>Vendi e Compra - Veloce e Sicuro </h3>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container align-content-center px-auto  ">
+                            <div class="row">
+                                <div class="col-12 mt-3 ">
+                                    <input class="form-control text-center w-50 mx-auto " type="search" placeholder="Cerca"
+                                        aria-label="Search">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid text-center">
+                            <div class="row">
+                                <div class="col-12 pt-2">
+                                    <button class="btn btn-danger text-center" type="submit"> <a class="text-light"
+                                            href="prodotti.html">Vai!</a> </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </header>
+
+
+
+        <!-- <div class="container fluid text-center mt-5 mb-5 ">
+            <div class="row mt-5">
+                <div class="col-12 mt-5">
+                    <h3 class="text-danger">Scegli la categoria</h3>
+                    <a href="#abc"><i class="fas fa-arrow-down fa-2x text-dark"></i></a>
+                </div>
+            </div>
+        </div > -->
+
+
+
+        <div class="container-fluid mt-5">
+            <div class="row">
+
+                <div id="abc" class="col-12 mb-5 ">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link  my-active active" id="home-tab" data-toggle="tab" href="#home"
+                                role="tab" aria-controls="home" aria-selected="true">In Promozione</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  my-active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Rapid Choice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  my-active" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                aria-controls="contact" aria-selected="false">In scadenza</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="container-fluid mt-5  ">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-3 ">
+                                        <div class="card  zoom mb-4 ">
+                                            <img src="./img/Senza titolo-1.jpg" class="card-img-top img-fluid"
+                                                alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elettronica</h5>
+                                                <p class="card-text">Sai che è molto facile trovare tecnologia top
+                                                    nell'usato
+                                                    garantito? Potr esti trovare</p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3  ">
+                                        <div class="card  zoom mb-4 ">
+                                            <img src="./img/auto.jpg" class="card-img-top img-fluid" alt="Auto">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Veicoli</h5>
+                                                <p class="card-text">Sai che è molto facile trovare autoveicoli top ?
+                                                    Potresti
+                                                    trovare maccchi ne di </p>
+                                                <a href="./prodotto.html" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3  ">
+                                        <div class="card  zoom mb-4">
+                                            <img src="./img/abiti.jpg" class="card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Abbigliamento</h5>
+                                                <p class="card-text">Sai che è molto facile trovare abbigliamento nella
+                                                    sezione
+                                                    nuovi arrivi ? </p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3  ">
+                                        <div class="card  zoom mb-4">
+                                            <img src="./img/giardino.jpg" class="card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Giardinaggio</h5>
+                                                <p class="card-text">Voglia di giardinaggio? Ancora per poco a prezzo
+                                                    sracciato il set di giradinaggio </p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="container-fluid mt-5  ">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-3">
+                                        <div class="card  zoom mb-4 ">
+                                            <img src="./img/gioielli.jpg" class="card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Gioielli</h5>
+                                                <p class="card-text ">Sai che è molto facile trovare gioielli
+                                                    garantiti?</p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3  ">
+                                        <div class="card  zoom mb-4">
+                                            <img src="./img/professionale.jpg" class="card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tools</h5>
+                                                <p class="card-text ">Tools per professionisti e sviluppo, divertiti
+                                                    comprando </p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3  ">
+                                        <div class="card  zoom mb-4">
+                                            <img src="./img/musica.jpg" class="card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Abbigliamento</h5>
+                                                <p class="card-text ">Strumenti musicali di tutti i generi! Potresti
+                                                    trovare
+                                                </p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3  ">
+                                        <div class="card  zoom mb-4">
+                                            <img src="./img/giardino.jpg" class="card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Giardinaggio</h5>
+                                                <p class="card-text">Voglia di giardinaggio? Voglia di potare? </p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="container-fluid mt-5   ">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-3  ">
+                                        <div class="card  zoom mb-4">
+                                            <img src="./img/arte.jpg" class="card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Arte</h5>
+                                                <p class="card-text">Sai che è molto facile trovare mobili top
+                                                    nell'usato
+                                                    garantito? Potr esti trovare </p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3  ">
+                                        <div class="card  zoom mb-4">
+                                            <img src="./img/mobili.jpg" class="card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Immobili</h5>
+                                                <p class="card-text">Sai che è molto facile trovare immobili ?
+                                                    Potresti
+                                                    trovare maccchi ne di </p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3  ">
+                                        <div class="card  zoom mb-4">
+                                            <img src="./img/giardino.jpg" class="card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Giardinaggio</h5>
+                                                <p class="card-text">Voglia di giardinaggio? Ancora per poco a prezzo
+                                                    sracciato. </p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3  ">
+                                        <div class="card  zoom mb-4">
+                                            <img src="./img/professionale.jpg" class="card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tools</h5>
+                                                <p class="card-text ">Tools per professionisti e sviluppo, divertiti
+                                                    comprando a prezzi stracciati</p>
+                                                <a href="#" class="btn btn-danger ">Vai</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+            <div class="container my-5 align-items-center justify-content-center border border-info p-3">
+                <div class="row text-center">
+                    <div class="col-12 col-md-4 mt-2 mx-auto">
+                        <img class="img-fluid w-100 " src="./img/toooooop.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-4 mt-2 text-center mx-auto mt-3">
+                        <h2>Comincia a guadagnare</h2>
+                        <img src="./img/sicuro_loghi.png" alt="" class="img-fluid mt-2">
+                        <h4 class="mt-4">Vendi ciò che non usi più: Veloce facile e sicuro!</h4>
+
+                     <a data-toggle="modal" data-target="#crea"><button type="button" class="btn bottone text-light mt-3">Registrati gratuitamente!</button></a>   
+
+
+
+                    </div>
+                    <div class="col-12 col-md-4 mt-5 mx-auto mb-5">
+                      
+                            <img class=" ml-2 img-fluid" src="./img/casetta.png" alt="">
+                            <button type="button" class="btn bottone-guadagna ml-3"><i
+                                class="fas fa-plus fa-1x mr-2 "></i>Inserisci
+                            Annuncio</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- Page Content -->
+            <div class="container-fluid text-center mt-5 back p-3">
+
+                <h1 class="font-weight-light text-center text-light  mb-0 back">Ultimi Annunci</h1>
+
+                <hr class="mt-2 mb-5">
+
+                <div class="row text-center text-lg-left">
+
+                    <div class="col-12 col-md-3 ">
+                        <div class="card zoom">
+                            <img src="img/automobile-1853936_1920.jpg" class=" img-fluid card-img-top" alt="auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Coca Cola </h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-danger">Scopri</a>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3  ">
+                        <div class="card zoom">
+                            <img src="img/5000.jpg" class="img-fluid card-img-top" alt="auto">
+                            <div class="card-body">
+                                <h5 class="card-title">500 Fiat</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-danger">Scopri</a>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3  ">
+                        <div class="card zoom">
+                            <img src="img/lamborghini-4815250_1920.jpg" class="img-fluid card-img-top" alt="auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Vendo Lamborghini</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-danger">Scopri</a>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3  ">
+                        <div class="card zoom">
+                            <img src="img/steering-wheel-801994_1920.jpg" class="img-fluid card-img-top" alt="auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Mercedes Classe A</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-danger">Scopri</a>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+
+
+            <div class="container mt-5 border border-info p-2 ">
+                <div class="row justify-content-center text-center ">
+                    <div class="col-12 mt-5 mb-3">
+                        <h2>Scarica l'app ufficiale di Rapid Turtle </h2>
+                        <h7>Cerca tra migliaia di annunci e inserisci i tuoi ovunque tu sia</h7>
+                    </div>
+                    <div class="row mb-3">
+                        <a class="text-dark" href="">Apple</a> <i class="fab fa-apple fa-2x mr-5 text-secondary ml-2">
+                        </i> <a class="text-dark" href="">Android</a><i
+                            class=" ml-2 fab fa-android fa-2x text-success"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="page-footer font-small stylish-color-dark pt-4 mt-5  border-top backround-my">
+
+
+
+                
+                <!-- Footer Links -->
+                <div class="container-fluid  text-center text-md-left">
+
+                    <!-- Social buttons --> 
+                    <ul class="list-unstyled list-inline text-center bg-dark text-light ">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light btn-floating btn-fb mx-1">
+                                <i class="fab fa-facebook-f"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light btn-floating btn-tw mx-1">
+                                <i class="fab fa-twitter"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light btn-floating btn-gplus mx-1">
+                                <i class="fab fa-google-plus-g"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light btn-floating btn-li mx-1">
+                                <i class="fab fa-linkedin-in"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light btn-floating btn-dribbble mx-1">
+                                <i class="fab fa-dribbble"> </i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Social buttons -->
+                    <!-- Grid row -->
+                    <div class="row text-center">
+
+
+
+                        <!-- Grid column -->
+                        <div class="col-12 col-md-4 mx-auto   ">
+
+                            <!-- Content -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Vendi in maniera sicura e
+                                veloce</h5>
+                            <p class="text-center"><img class="img-fluid mb-4" src="./img/footer.png" alt=""> <button
+                                    type="button" class="btn btn-custom ml-3"><i
+                                        class="fas fa-plus fa-1x mr-2 "></i>Inserisci
+                                    Annuncio</button></p>
+                        </div>
+
+
+
+                        <div class="col-12 col-md-4 mx-auto">
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 mt-4 ">Contattaci</h5>
+
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <p><button type="button" class="btn btn-custom ml-3"><i
+                                                class="fas fa-hands-helping fa-1x mr-2 "></i>Affiliazione</button></p>
+                                </li>
+                                <li>
+                                    <p><button type="button" class="btn btn-custom ml-3"><i class="fas fa-question-circle fa-1x mr-2 "></i>Aiuto</button></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Grid column -->
+
+
+                        
+                        <div class="col-12 col-md-4 mx-auto">
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 mt-4 ">Feedback</h5>
+
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <p><button type="button" class="btn btn-custom ml-3"><i
+                                                class="fas fa-share-alt fa-1x mr-2 "></i>Condividi</button></p>
+                                </li>
+                                <li>
+                                    <p><button type="button" class="btn btn-custom ml-3"><i class="fas fa-briefcase fa-1x mr-2 "></i>Lavora con noi</button></p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- Footer Links -->
+
+
+
+
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 bg-dark text-light">© 2020 Copyright:
+                    <a class="text-danger" href="index.html">Rapid Turtle</a>
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+
+
+
+
+
+            <!-- Modale login accedi -->
+
+            <div id="accedi" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="modal-title">Accesso</h5>
+                                    </div>
+                                    <div class="col-6">
+                                        <a class="navbar-brand" href="#"> <img
+                                                class="img-fluid w-100 animated fadeInLeft  "
+                                                src="./img/welcome back.png" alt=""> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Inserisci l'Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Inserisci l'email">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Ricordami</label>
+                                </div>
+                                <small id="emailHelp" class="form-text text-muted">Tranquillo le tue informazioni le
+                                    daremo a cani e porci</small>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger">Accedi</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fine modal accedi -->
+
+
+
+            <!-- modale registrati -->
+
+            <div id="crea" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="modal-title">Registrati</h5>
+                                    </div>
+                                    <div class="col-6">
+                                        <a class="navbar-brand" href="#"> <img
+                                                class="img-fluid w-100 animated bounceInLeft  "
+                                                src="./img/rapid_welcome.png" alt=""> </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Inserisci l'email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <small id="emailHelp" class="form-text text-muted">Tranquillo le tue
+                                            informazioni le daremo a cani e porci</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Inserisci la password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group form-check">
+
+
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Reinserisci la Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group form-check">
+
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger">Accedi</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fine modale registrati -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/573f69ed1b.js" crossorigin="anonymous"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+        <script src="./script.js"></script>
+
+
+
+    
+
+
+</body>
+
+
+
+
+</html>

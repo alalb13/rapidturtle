@@ -1,0 +1,237 @@
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+
+
+.capitano{
+  font-family: 'Play', sans-serif;
+}
+
+.my-color-nav{
+    background-color: transparent;
+    
+}
+
+.my-color-nav-after{
+
+    background-color: rgb(255, 251, 0);
+}
+
+.my-over{
+
+    color: black;
+}
+
+.my-over:hover{
+    color: red;
+
+    
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(39,149,204,0.9),rgba(39,149,204,0.1)),url('./img/ecommerce-2140603_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+ 
+
+
+  .my-border{
+      border-bottom: 1px solid red;
+      
+  }
+
+.btn-custom{
+
+    background-color: rgba(255, 255, 255, 0.596);
+
+    border: black;
+
+    
+}
+ .btn-custom:hover{
+     background-color:#C82333;
+     color: rgb(255, 255, 255);
+
+     
+ }
+  
+ .bg-mio{
+
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 100%;
+    border-radius: 50%;
+    
+    
+ }
+
+ body{min-height:100vh;}
+
+
+ .navbar-default{
+   transition:100ms ease;
+   background:transparent;
+   
+ }
+ .navbar-default.scrolled{
+   background-color: rgb(255, 255, 255);
+   -webkit-box-shadow: -1px 7px 22px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: -1px 7px 22px 0px rgba(0,0,0,0.75);
+   box-shadow: -1px 7px 22px 0px rgba(0,0,0,0.75);   
+
+ }
+
+ .bounceInLeft {
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-iteration-count: initial;
+    
+
+    
+  }
+
+  .my-bg-vendi{
+
+    background-image: linear-gradient(rgba(200,200,200,0.4),rgba(200,200,200,0.4)),url(./img/startup-593341_1920.jpg);
+  }
+
+  .my-div-bg{
+
+    background-color: rgba(255, 255, 255, 0.767);
+  }
+
+  .my-active:active{
+
+    background:linear-gradient(rgba(39,149,204,0.9),rgba(255,75,93,0.5));
+    color: white;
+
+  }
+
+  .my-active:hover{
+    background: rgba(255,75,93,0.5);
+    color: white;
+  }
+
+  .my-active{
+
+    background:white;
+    color:black;
+  }
+
+
+  .btn-custom-1{
+
+    background-color:#C82333;
+    border: rgb(255, 255, 255);
+    color: white;
+    
+}
+
+
+ .btn-custom-1:hover{
+     background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+ }
+
+ .zoom{
+
+  transition: 0.4s;
+  
+ }
+
+ .zoom:hover{
+
+  transform: scale(1.08);
+  /* -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
+
+ }
+
+.my-border{
+
+  border-top: black;
+  
+}
+
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: #C82333;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+
+.backround-my{
+
+  background-image: linear-gradient(rgba(39,149,204,0.7),rgba(39,149,204,0.5)), url(./img/abcdefg.jpg);
+  background-size: cover;
+}
+
+
+.colorissimo{
+
+  background: linear-gradient(rgba(39,149,204,0.9),rgba(39,149,204,0.3));
+}
+
+
+.guadagna{
+
+  background-image:url(./img/guadagna.png);
+  background-size: cover;
+
+}
+
+
+.bottone-guadagna{
+
+  background-color: #C82333;
+  color: white;
+}
+
+.bottone-guadagna:hover{
+  background-color: black;
+  color: white;
+}
+
+
+.bottone{
+
+  background-color: #4A98C6;
+}
+
+.bottone:hover{
+  background-color:black;
+  color: white;
+}
+
+
+.back-prodotto{
+
+  background-color: #4A98C6;
+}
+
+
+
+.bottone2{
+  color: #C82333;
+}
+
+.bottone2:hover{
+  border-bottom: #C82333;
+}
+
+.bottone2:active{
+  border: #C82333;
+}
+
+
+.back{
+
+  background-color: #4A98C6;
+}

@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <ink rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./script.js">
+        <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="my_style.css">
+
+</head>
+
+
+
+
+<body class="capitano">
+
+
+
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-default navbar-fixed-top   ">
+                    <a class="navbar-brand" href="index.html"> <img class="img-fluid w-100 animated fadeInLeft  "
+                            src="./img/rapid_log_piccolo.png" alt=""> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-danger" data-toggle="modal" data-target="#accedi"
+                                    href="#">Accedi<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" data-toggle="modal" data-target="#crea"
+                                    href="#">Registrati</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-custom ml-3"><i
+                                        class="fas fa-plus fa-1x mr-2 "></i>Inserisci
+                                    Annuncio</button>
+                                <a href="gestionale.html"><button type="button" class="btn btn-custom ml-3"><i
+                                            class="fas fa-users-cog fa-1x mr-3"></i>Admin</button></a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12">
+
+
+                <div class="row ">
+
+                    <div class="col-12-second col-md-4 mt-5 pt-3">
+                        <p class="h3 text-center text-secondary mt-5">Non hai trovato? <i
+                                class="far fa-sad-tear fa-1x"></i>
+                        </p>
+                        <p class="h3 text-center text-secondary">Usa un altro filtro</p>
+
+
+                        <div class="container mt-5  ">
+                            <div class="row">
+
+
+                                <div class="container">
+                                    <input type="text" class=" text-center form-control mb-3 mt-2 "
+                                        placeholder="Cerca la parola chiave">
+                                    <div class="row">
+                                        <div class="col-12 mt-3 text-center">
+                                            <button type="button" class="btn btn-danger mb-5">Vai</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row d-none d-md-block col-md-12 colorissimo p-4">
+
+                                        <p class="h2 text-center mt-5 text-light">Potrebbe interessarti anche:</p>
+
+
+
+                                        <div class="col-12  zoom mt-5 mb-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ferrari ultimo modello</h5>
+                                                    <p class="h5 text-secondary"> 254.999 €</p>
+                                                    <img class="img-fluid" src="./img/car-race-438467_1920.jpg" alt="">
+                                                    <a href="#" class="btn btn-danger mt-3">Scopri</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 zoom mb-4 mt-3 ">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Porche</h5>
+                                                    <p class="h5 text-secondary"> 102.999 €</p>
+                                                    <img class="img-fluid" src="./img/sports-car-3383404_1920.jpg"
+                                                        alt="">
+                                                    <a href="#" class="btn btn-danger mt-3">Scopri</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 zoom mb-4 mt-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Lamborghini</h5>
+                                                    <p class="h5 text-secondary"> 205.999 €</p>
+                                                    <img class="img-fluid"
+                                                        src="./img/lamborghini-aventador-2932196_1920.jpg" alt="">
+                                                    <a href="#" class="btn btn-danger mt-3">Scopri</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 zoom mb-4 mt-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Maserati</h5>
+                                                    <p class="h5 text-secondary"> 305.999 €</p>
+                                                    <img class="img-fluid" src="./img/maserati.jpg" alt="">
+                                                    <a href="#" class="btn btn-danger mt-3">Scopri</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="col-12 col-md-8 ">
+                        <div class="card mb-3  ">
+
+
+                            <div class="container-fluid text-center">
+                                <div class="row mt-5 pb-5">
+                                    <div class="col-12 mt-5 p-2 border border-info mb-5">
+                                        <h2 class="mb-5 my-auto ">
+                                            <p class="text-secondary">Hai cercato:</p>Auto sportiva
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row   ">
+
+
+                                <div class="col-md-4">
+                                    <img src="./img/maserati.jpg" class="card-img img-fluid" alt="...">
+                                    <p>
+                                        <p class="text-secondary mt-3 ml-2"><i
+                                                class="fas fa-child fa-1x mr-2 text-danger"></i>Pingo
+                                            pallino</p>
+                                        <p class="text-dark ml-2"> <i
+                                                class="fas fa-map-marker-alt fa-1x mr-2"></i>Cerignola
+                                        </p>
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Affare Maserati!</h5>
+                                        <p class="card-text">Usata solo per fare il giro del palazzo! Vendo perchè mia
+                                            moglie
+                                            non sopporta il rumore della marmitta! Scambio con iphone oppure scooter
+                                            elettrico
+                                        </p>
+                                        <p class="card-text"> <button type="button"
+                                                class="btn btn-danger mr-5">Vedi</button>
+                                            <small class="text-muted">Caricato 3 min fa</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 ">
+                            <div class="row  ">
+                                <div class="col-md-4">
+                                    <img src="./img/batnmobile.png" class="card-img img-fluid" alt="...">
+                                    <p>
+                                        <p class="text-secondary mt-3 ml-2"><i
+                                                class="fas fa-child fa-1x mr-2 text-danger"></i>Pingo
+                                            pallino</p>
+                                        <p class="text-dark ml-2"> <i
+                                                class="fas fa-map-marker-alt fa-1x mr-2"></i>Cerignola
+                                        </p>
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Batmobilie</h5>
+                                        <p class="card-text">Usata solo per fare il giro del palazzo! Vendo perchè mia
+                                            moglie
+                                            non sopporta il rumore della marmitta! Scambio con iphone oppure scooter
+                                            elettrico
+                                        </p>
+                                        <p class="card-text"> <button type="button"
+                                                class="btn btn-danger mr-5">Vedi</button>
+                                            <small class="text-muted">Caricato 3 min fa</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 ">
+                            <div class="row  ">
+                                <div class="col-md-4">
+                                    <img src="./img/automobile-1853936_1920.jpg" class="card-img img-fluid" alt="...">
+                                    <p>
+                                        <p class="text-secondary mt-3 ml-2"><i
+                                                class="fas fa-child fa-1x mr-2 text-danger"></i>Pingo
+                                            pallino</p>
+                                        <p class="text-dark ml-2"> <i
+                                                class="fas fa-map-marker-alt fa-1x mr-2"></i>Cerignola
+                                        </p>
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Macchina sponsor Coca-Cola</h5>
+                                        <p class="card-text">Usata solo per fare il giro del palazzo! Vendo perchè mia
+                                            moglie
+                                            non sopporta il rumore della marmitta! Scambio con iphone oppure scooter
+                                            elettrico
+                                        </p>
+                                        <p class="card-text"> <button type="button"
+                                                class="btn btn-danger mr-5">Vedi</button>
+                                            <small class="text-muted">Caricato 3 min fa</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 ">
+                            <div class="row  ">
+                                <div class="col-md-4">
+                                    <img src="./img/steering-wheel-801994_1920.jpg" class="card-img img-fluid"
+                                        alt="...">
+                                    <p>
+                                        <p class="text-secondary mt-3 ml-2"><i
+                                                class="fas fa-child fa-1x mr-2 text-danger"></i>Pingo
+                                            pallino</p>
+                                        <p class="text-dark ml-2"> <i
+                                                class="fas fa-map-marker-alt fa-1x mr-2"></i>Cerignola
+                                        </p>
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Mercedes</h5>
+                                        <p class="card-text">Usata solo per fare il giro del palazzo! Vendo perchè mia
+                                            moglie
+                                            non sopporta il rumore della marmitta! Scambio con iphone oppure scooter
+                                            elettrico
+                                        </p>
+                                        <p class="card-text"> <button type="button"
+                                                class="btn btn-danger mr-5">Vedi</button>
+                                            <small class="text-muted">Caricato 3 min fa</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card mb-3 ">
+                            <div class="row  ">
+                                <div class="col-md-4">
+                                    <img src="./img/auto.jpg" class="card-img img-fluid" alt="...">
+                                    <p>
+                                        <p class="text-secondary mt-3 ml-2"><i
+                                                class="fas fa-child fa-1x mr-2 text-danger"></i>Pingo
+                                            pallino</p>
+                                        <p class="text-dark ml-2"> <i
+                                                class="fas fa-map-marker-alt fa-1x mr-2"></i>Cerignola
+                                        </p>
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Mustang</h5>
+                                        <p class="card-text">Usata solo per fare il giro del palazzo! Vendo perchè mia
+                                            moglie
+                                            non sopporta il rumore della marmitta! Scambio con iphone oppure scooter
+                                            elettrico
+                                        </p>
+                                        <p class="card-text"> <button type="button"
+                                                class="btn btn-danger mr-5">Vedi</button>
+                                            <small class="text-muted">Caricato 3 min fa</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 ">
+                            <div class="row  ">
+                                <div class="col-md-4">
+                                    <img src="./img/car-1245780_1920.jpg" class="card-img img-fluid" alt="...">
+                                    <p>
+                                        <p class="text-secondary mt-3 ml-2"><i
+                                                class="fas fa-child fa-1x mr-2 text-danger"></i>Pingo
+                                            pallino</p>
+                                        <p class="text-dark ml-2"> <i
+                                                class="fas fa-map-marker-alt fa-1x mr-2"></i>Cerignola
+                                        </p>
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Macchina D'epoca</h5>
+                                        <p class="card-text">Usata solo per fare il giro del palazzo! Vendo perchè mia
+                                            moglie
+                                            non sopporta il rumore della marmitta! Scambio con iphone oppure scooter
+                                            elettrico
+                                        </p>
+                                        <p class="card-text"> <button type="button"
+                                                class="btn btn-danger mr-5">Vedi</button>
+                                            <small class="text-muted">Caricato 3 min fa</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card mb-3 ">
+                            <div class="row  ">
+                                <div class="col-md-4">
+                                    <img src="./img/fiat-4298163_1920.jpg" class="card-img img-fluid" alt="...">
+                                    <p>
+                                        <p class="text-secondary mt-3 ml-2"><i
+                                                class="fas fa-child fa-1x mr-2 text-danger"></i>Pingo
+                                            pallino</p>
+                                        <p class="text-dark ml-2"> <i
+                                                class="fas fa-map-marker-alt fa-1x mr-2"></i>Cerignola
+                                        </p>
+                                    </p>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Fiat</h5>
+                                        <p class="card-text">Usata solo per fare il giro del palazzo! Vendo perchè mia
+                                            moglie
+                                            non sopporta il rumore della marmitta! Scambio con iphone oppure scooter
+                                            elettrico
+                                        </p>
+                                        <p class="card-text"> <button type="button"
+                                                class="btn btn-danger mr-5">Vedi</button>
+                                            <small class="text-muted">Caricato 3 min fa</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="page-footer font-small stylish-color-dark pt-4 mt-5  border-top backround-my">
+            <!-- Footer Links -->
+            <div class="container-fluidtext-center text-md-left">
+
+
+
+                <!-- Social buttons -->
+                <ul class="list-unstyled list-inline text-center bg-dark text-light ">
+                    <li class="list-inline-item">
+                        <a href="#" class="text-light btn-floating btn-fb mx-1">
+                            <i class="fab fa-facebook-f"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-light btn-floating btn-tw mx-1">
+                            <i class="fab fa-twitter"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-light btn-floating btn-gplus mx-1">
+                            <i class="fab fa-google-plus-g"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-light btn-floating btn-li mx-1">
+                            <i class="fab fa-linkedin-in"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-light btn-floating btn-dribbble mx-1">
+                            <i class="fab fa-dribbble"> </i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Social buttons -->
+                <!-- Grid row -->
+                <div class="row text-center">
+
+
+
+                    <!-- Grid column -->
+                    <div class="col-12 col-md-4 mx-auto   ">
+
+                        <!-- Content -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Vendi in maniera sicura e
+                            veloce</h5>
+                        <p class="text-center"><img class="img-fluid mb-4" src="./img/footer.png" alt=""> <button
+                                type="button" class="btn btn-custom ml-3"><i
+                                    class="fas fa-plus fa-1x mr-2 "></i>Inserisci
+                                Annuncio</button></p>
+                    </div>
+
+
+
+                    <div class="col-12 col-md-4 mx-auto">
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 mt-4 ">Contattaci</h5>
+
+                        <ul class="list-unstyled ">
+                            <li>
+                                <p><button type="button" class="btn btn-custom ml-3"><i
+                                            class="fas fa-hands-helping fa-1x mr-2 "></i>Affiliazione</button></p>
+                            </li>
+                            <li>
+                                <p><button type="button" class="btn btn-custom ml-3"><i
+                                            class="fas fa-question-circle fa-1x mr-2 "></i>Aiuto</button></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+
+
+                    <div class="col-12 col-md-4 mx-auto">
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 mt-4 ">Feedback</h5>
+
+                        <ul class="list-unstyled ">
+                            <li>
+                                <p><button type="button" class="btn btn-custom ml-3"><i
+                                            class="fas fa-share-alt fa-1x mr-2 "></i>Condividi</button></p>
+                            </li>
+                            <li>
+                                <p><button type="button" class="btn btn-custom ml-3"><i
+                                            class="fas fa-briefcase fa-1x mr-2 "></i>Lavora con noi</button></p>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Footer Links -->
+
+
+
+
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 bg-dark text-light">© 2020 Copyright:
+                <a class="text-danger" href="index.html">Rapid Turtle</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+
+
+
+
+        <!-- Modale login accedi -->
+
+        <div id="accedi" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="modal-title">Accesso</h5>
+                                </div>
+                                <div class="col-6">
+                                    <a class="navbar-brand" href="#"> <img class="img-fluid w-100 animated fadeInLeft  "
+                                            src="./img/welcome back.png" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Inserisci l'Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Inserisci l'email">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Ricordami</label>
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted">Tranquillo le tue informazioni le
+                                daremo a cani e porci</small>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger">Accedi</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fine modal accedi -->
+
+
+
+        <!-- modale registrati -->
+
+        <div id="crea" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="modal-title">Registrati</h5>
+                                </div>
+                                <div class="col-6">
+                                    <a class="navbar-brand" href="#"> <img
+                                            class="img-fluid w-100 animated bounceInLeft  "
+                                            src="./img/rapid_welcome.png" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Inserisci l'email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">Tranquillo le tue informazioni le
+                                        daremo a cani e porci</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Inserisci la password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Reinserisci la Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger">Accedi</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fine modale registrati -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/573f69ed1b.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="js/wow.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>
